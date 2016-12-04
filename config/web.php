@@ -4,6 +4,7 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'id' => 'basic',
+    'language' => 'ru-RU',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
@@ -43,6 +44,13 @@ $config = [
             'showScriptName' => false,
             'rules' => [
             ],
+        ],
+    ],
+    // my module for home work ln8 geekhub phpAdvance
+    // module: create - crud, db - migrations
+    'modules' => [
+        'homework' => [
+            'class' => 'app\modules\homework\Module',
         ],
     ],
     'params' => $params,
